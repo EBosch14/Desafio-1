@@ -9,35 +9,35 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header id="top">
+    <header id="top-container">
         <figure class="logo"><img src="../img/ebeboy2.ico" alt="EBEBOY"></figure>
         <h1 class="page-name"><a href="../../index.html">EBEMATES</a></h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li><a href="./envios.html">Envíos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./promociones.html">Promociones</a></li>
-            <li><a href="./envios.html">Envíos</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
         <section id="mate">
             <h2>MATES DISPONIBLES</h2>
             <article>
-                <img src="../img/Mate-Electrico.jpg" alt="Mate electrico">
+                <figure class="productos"><img src="../img/Mate-Electrico.jpg" alt="Mate electrico"></figure>
                 <figcaption>Mate electrico -- Precio: <u>$9900</u></figcaption>
             </article>
             <article>
-                <img src="../img/Imperial.jpg" alt="Mate imperial">
+                <figure class="productos"><img src="../img/Imperial.jpg" alt="Mate imperial"></figure>
                 <figcaption>Mate Imperial-- Precio: <u>$5100</u></figcaption>
             </article>
             <article>
-                <img src="../img/Camionero-uruguayo.jpg" alt="Mate camionero">
+                <figure class="productos"><img src="../img/Camionero-uruguayo.jpg" alt="Mate camionero"></figure>
                 <figcaption>Mate Camionero -- Precio: <u>$3900</u></figcaption>
             </article>
             <article>
-                <img src="../img/Acero-inoxidable-termico.jpg" alt="Mate aceroinoxidable">
+                <figure class="productos"><img src="../img/Acero-inoxidable-termico.jpg" alt="Mate aceroinoxidable"></figure>
                 <figcaption>Mate acero inoxidable y termico -- Precio: <u>$6900</u></figcaption>
             </article>
         </section>
@@ -45,19 +45,19 @@
         <section id="termo">
             <h2>TERMOS DISPONIBLES</h2>
             <article>
-                <img src="../img/termo-stanley.jpg" alt="Termo stanley">
+                <figure class="productos"><img src="../img/termo-stanley.jpg" alt="Termo stanley"></figure>
                 <figcaption>Termo Stanley 1.2L -- Precio: <u>$19900</u></figcaption>
             </article>
             <article>
-                <img src="../img/termo-coleman.jpg" alt="Termo coleman">
+                <figure class="productos"><img src="../img/termo-coleman.jpg" alt="Termo coleman"></figure>
                 <figcaption>Termo Coleman 1L-- Precio: <u>$13900</u></figcaption>
             </article>
             <article>
-                <img src="../img/termo-mediamanija.jpg" alt="Termo mediamanija">
+                <figure class="productos"><img src="../img/termo-mediamanija.jpg" alt="Termo mediamanija"></figure>
                 <figcaption>Termo media manija 1L -- Precio: <u>$6400</u></figcaption>
             </article>
             <article>
-                <img src="../img/termo-aceroinoxidable.jpg" alt="Termo aceroinoxidable">
+                <figure class="productos"><img src="../img/termo-aceroinoxidable.jpg" alt="Termo aceroinoxidable"></figure>
                 <figcaption>Termo acero inoxidable 0.8L -- Precio: <u>$3500</u></figcaption>
             </article>
         </section>
@@ -65,7 +65,7 @@
         <section id="yerba">
             <h2>YERBAS DISPONIBLES</h2>
             <article>
-                <img src="../img/yerba-canarias.jpg" alt="Yerba canarias">
+                <figure class="productos"><img src="../img/yerba-canarias.jpg" alt="Yerba canarias"></figure>
                 <figcaption>
                     <table border="1" cellspacing="5" cellpadding="10" width="20%">
                         <caption>Yerbas Canarias</caption>
@@ -81,7 +81,7 @@
                 </figcaption>
             </article>
             <article>
-                <img src="../img/yerba-cruzmalta.jpg" alt="Yerba cruzmalta">
+                <figure class="productos"><img src="../img/yerba-cruzmalta.jpg" alt="Yerba cruzmalta"></figure>
                 <figcaption>
                     <table border="1" cellspacing="5" cellpadding="10" width="20%">
                         <caption>Yerbas Cruz de Malta</caption>
@@ -101,7 +101,7 @@
                 </figcaption>
             </article>
             <article>
-                <img src="../img/yerba-amanda.jpg" alt="Yerba amanda">
+                <figure class="productos"><img src="../img/yerba-amanda.jpg" alt="Yerba amanda"></figure>
                 <figcaption>
                     <table border="1" cellspacing="5" cellpadding="10" width="20%">
                         <caption>Yerbas Amanda</caption>
@@ -117,7 +117,7 @@
                 </figcaption>
             </article>
             <article>
-                <img src="../img/yerba-playadito.jpg" alt="Yerba playadito">
+                <figure class="productos"><img src="../img/yerba-playadito.jpg" alt="Yerba playadito"></figure>
                 <figcaption>
                     <table border="1" cellspacing="5" cellpadding="10" width="20%">
                         <caption>Yerbas Playadito</caption>
@@ -135,7 +135,7 @@
         </section>
     </main>
     <br><br>
-    <footer>
+    <footer id="pie">
         <div>
             <img src="../img/facebook.ico" alt="">
             <span>Facebook</span>
@@ -152,7 +152,7 @@
             <img src="../img/icono-ub.ico" alt="">
             <span>Av. Italia N° 1041, Resistencia - Chaco, Argentina</span>
         </div>
-        <div>
+        <div class="back-to-top">
             <a href="#top">Ir al Inicio</a>
         </div>
     </footer>

@@ -9,26 +9,29 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header id="top">
+    <header id="top-container">
         <figure class="logo"><img src="./assets/img/ebeboy2.ico" alt="EBEBOY"></figure>
         <h1 class="page-name"><a href="./index.html">EBEMATES</a></h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="./assets/pages/productos.html">Productos</a></li>
+                <li><a href="./assets/pages/promociones.html">Promociones</a></li>
+                <li><a href="./assets/pages/envios.html">Envíos</a></li>
+                <li><a href="./assets/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="./assets/pages/productos.html">Productos</a></li>
-            <li><a href="./assets/pages/promociones.html">Promociones</a></li>
-            <li><a href="./assets/pages/envios.html">Envíos</a></li>
-            <li><a href="./assets/pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <br>
     <main>
         <section>
             <h2>Mates</h2>
             <b><em>Hot sale!</em></b>
             <article>
-                <img src="./assets/img/Acero-inoxidable-termico.jpg" alt="Mate aceroinoxidable">
-                <img src="./assets/img/Camionero-uruguayo.jpg" alt="Mate camionero">
+                <figure class="productos">
+                    <img src="./assets/img/Acero-inoxidable-termico.jpg" alt="Mate aceroinoxidable">
+                </figure>
+                <figure class="productos">
+                    <img src="./assets/img/Camionero-uruguayo.jpg" alt="Mate camionero">
+                </figure>
             </article>
             <a href="./assets/pages/productos.html#mate">Ver mas variedades</a>
         </section>
@@ -36,8 +39,12 @@
             <h2>Termos</h2>
             <b><em>Hot sale!</em></b>
             <article>
-                <img src="./assets/img/termo-mediamanija.jpg" alt="Termo mediamanija">
-                <img src="./assets/img/termo-aceroinoxidable.jpg" alt="Termo aceroinoxidable">
+                <figure class="productos">
+                    <img src="./assets/img/termo-mediamanija.jpg" alt="Termo mediamanija">
+                </figure>
+                <figure class="productos">
+                    <img src="./assets/img/termo-aceroinoxidable.jpg" alt="Termo aceroinoxidable">
+                </figure>
             </article>
             <a href="./assets/pages/productos.html#termo">Ver mas variedades</a>
         </section>
@@ -45,8 +52,12 @@
             <h2>Promociones</h2>
             <b><em>Hot sale!</em></b>
             <article>
-                <img src="./assets/img/kit-matero3.jpg" alt="kit matero3">
-                <img src="./assets/img/equipo-de-mate-fernet.jpg" alt="kit matero fernet">
+                <figure class="productos">
+                    <img src="./assets/img/kit-matero3.jpg" alt="kit matero3">
+                </figure>
+                <figure class="productos">
+                    <img src="./assets/img/equipo-de-mate-fernet.jpg" alt="kit matero fernet">
+                </figure>
             </article>
             <a href="./assets/pages/promociones.html">Ver mas variedades</a>
         </section>
@@ -54,14 +65,18 @@
             <h2>Yerbas</h2>
             <b><em>Hot sale!</em></b>
             <article>
-                <img src="./assets/img/yerba-cruzmalta.jpg" alt="yerba cruzmalta">
-                <img src="./assets/img/yerba-canarias.jpg" alt="yerba canarias">
+                <figure class="productos">
+                    <img src="./assets/img/yerba-cruzmalta.jpg" alt="yerba cruzmalta">
+                </figure>
+                <figure class="productos">
+                    <img src="./assets/img/yerba-canarias.jpg" alt="yerba canarias">
+                </figure>
             </article>
             <a href="./assets/pages/productos.html#yerba">Ver mas variedades</a>
         </section>
     </main>
     <br><br>
-    <footer>
+    <footer id="pie">
         <div>
             <img src="./assets/img/facebook.ico" alt="">
             <span>Facebook</span>
@@ -78,7 +93,7 @@
             <img src="./assets/img/icono-ub.ico" alt="">
             <span>Av. Italia N° 1041, Resistencia - Chaco, Argentina</span>
         </div>
-        <div>
+        <div class="back-to-top">
             <a href="#top">Ir al Inicio</a>
         </div>
     </footer>
