@@ -10,8 +10,10 @@
 </head>
 <body>
     <header id="header">
-        <div class="header__logo"><img src="../img/ebeboy2.ico" alt="EBEBOY"></div>
-        <h1 class="header__page-name"><a href="../../index.html">EBEMATES</a></h1>
+        <div class="container-logo">
+            <div class="header__logo"><img src="../img/ebeboy2.ico" alt="EBEBOY"></div>
+            <h1 class="header__page-name"><a href="../../index.html">EBEMATES</a></h1>
+        </div>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="./productos.html">Productos</a></li>
@@ -21,53 +23,51 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container-prod">
         <section id="mate">
-            <h2>MATES DISPONIBLES</h2>
-            <article>
-                <figure class="prod-img"><img src="../img/Mate-Electrico.jpg" alt="Mate electrico"></figure>
+            <h2 class="title-mate">MATES</h2>
+            <article class="mate-1">
+                <figure class="prod-img __termo"><img src="../img/Mate-Electrico.jpg" alt="Mate electrico"></figure>
                 <figcaption>Mate electrico -- Precio: <u>$9900</u></figcaption>
             </article>
-            <article>
-                <figure class="prod-img"><img src="../img/Imperial.jpg" alt="Mate imperial"></figure>
+            <article class="mate-2">
+                <figure class="prod-img __termo"><img src="../img/Imperial.jpg" alt="Mate imperial"></figure>
                 <figcaption>Mate Imperial-- Precio: <u>$5100</u></figcaption>
             </article>
-            <article>
-                <figure class="prod-img"><img src="../img/Camionero-uruguayo.jpg" alt="Mate camionero"></figure>
+            <article class="mate-3">
+                <figure class="prod-img __termo"><img src="../img/Camionero-uruguayo.jpg" alt="Mate camionero"></figure>
                 <figcaption>Mate Camionero -- Precio: <u>$3900</u></figcaption>
             </article>
-            <article>
-                <figure class="prod-img"><img src="../img/Acero-inoxidable-termico.jpg" alt="Mate aceroinoxidable"></figure>
+            <article class="mate-4">
+                <figure class="prod-img __termo"><img src="../img/Acero-inoxidable-termico.jpg" alt="Mate aceroinoxidable"></figure>
                 <figcaption>Mate acero inoxidable y termico -- Precio: <u>$6900</u></figcaption>
             </article>
         </section>
-        <br>
         <section id="termo">
-            <h2>TERMOS DISPONIBLES</h2>
-            <article>
+            <h2 class="title-termo">TERMOS</h2>
+            <article class="termo-1">
                 <figure class="prod-img"><img src="../img/termo-stanley.jpg" alt="Termo stanley"></figure>
                 <figcaption>Termo Stanley 1.2L -- Precio: <u>$19900</u></figcaption>
             </article>
-            <article>
+            <article class="termo-2">
                 <figure class="prod-img"><img src="../img/termo-coleman.jpg" alt="Termo coleman"></figure>
                 <figcaption>Termo Coleman 1L-- Precio: <u>$13900</u></figcaption>
             </article>
-            <article>
+            <article class="termo-3">
                 <figure class="prod-img"><img src="../img/termo-mediamanija.jpg" alt="Termo mediamanija"></figure>
                 <figcaption>Termo media manija 1L -- Precio: <u>$6400</u></figcaption>
             </article>
-            <article>
+            <article class="termo-4">
                 <figure class="prod-img"><img src="../img/termo-aceroinoxidable.jpg" alt="Termo aceroinoxidable"></figure>
                 <figcaption>Termo acero inoxidable 0.8L -- Precio: <u>$3500</u></figcaption>
             </article>
         </section>
-        <br>
         <section id="yerba">
-            <h2>YERBAS DISPONIBLES</h2>
-            <article>
+            <h2 class="title-yerba">YERBAS</h2>
+            <article class="yerba-1">
                 <figure class="prod-img"><img src="../img/yerba-canarias.jpg" alt="Yerba canarias"></figure>
                 <figcaption>
-                    <table border="1" cellspacing="5" cellpadding="10" width="20%">
+                    <table border="1" cellspacing="5" cellpadding="10">
                         <caption>Yerbas Canarias</caption>
                         <tr>
                             <td>0.5kg</td>
@@ -80,10 +80,10 @@
                     </table>
                 </figcaption>
             </article>
-            <article>
+            <article class="yerba-2">
                 <figure class="prod-img"><img src="../img/yerba-cruzmalta.jpg" alt="Yerba cruzmalta"></figure>
                 <figcaption>
-                    <table border="1" cellspacing="5" cellpadding="10" width="20%">
+                    <table border="1" cellspacing="5" cellpadding="10">
                         <caption>Yerbas Cruz de Malta</caption>
                         <tr>
                             <td>0.5kg</td>
@@ -100,10 +100,10 @@
                     </table>
                 </figcaption>
             </article>
-            <article>
+            <article class="yerba-3">
                 <figure class="prod-img"><img src="../img/yerba-amanda.jpg" alt="Yerba amanda"></figure>
                 <figcaption>
-                    <table border="1" cellspacing="5" cellpadding="10" width="20%">
+                    <table border="1" cellspacing="5" cellpadding="10">
                         <caption>Yerbas Amanda</caption>
                         <tr>
                             <td>0.5kg</td>
@@ -116,10 +116,10 @@
                     </table>
                 </figcaption>
             </article>
-            <article>
+            <article class="yerba-4">
                 <figure class="prod-img"><img src="../img/yerba-playadito.jpg" alt="Yerba playadito"></figure>
                 <figcaption>
-                    <table border="1" cellspacing="5" cellpadding="10" width="20%">
+                    <table border="1" cellspacing="5" cellpadding="10">
                         <caption>Yerbas Playadito</caption>
                         <tr>
                             <td>1kg</td>
@@ -134,7 +134,6 @@
             </article>
         </section>
     </main>
-    <br><br>
     <footer id="pie">
         <div>
             <img src="../img/facebook.ico" alt="">
