@@ -53,9 +53,17 @@ em{
     background-color: #d9d9d9;
     align-items: center;
     justify-content: space-around;
+    column-gap: 35rem;
     padding: 1rem 0;
     position: sticky;
     top: 0rem;
+}
+
+.container-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .header__page-name{
@@ -70,7 +78,7 @@ em{
 
 .menu{
     display: flex;
-    gap: 7rem;
+    gap: 5rem;
     list-style: none;
 }
 
