@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root{
+    --text-large: 5em;
+    --text-medium: 3.5em;
+    --text-small: 2em;
+    --text-xsmall: 1.2em;
+}
+
+
+/*Global styles*/
+
 *{
     margin: 0;
     padding: 0;
@@ -16,22 +26,27 @@ body{
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
 h1, h2{
-    font-style: normal;
-    font-size: 5rem;
+    font-size: var(--text-large);
     font-weight: 400;
     line-height: 6.1rem;
 }
 
 h2{
-    letter-spacing: 1.5rem;
-    text-transform: uppercase;
+    letter-spacing: 0.3em;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+em{
+    font-size: var(--text-small);
 }
+
+/*Inicio header*/
 
 #header{
     display: flex;
@@ -43,13 +58,14 @@ a{
     top: 0rem;
 }
 
+.header__page-name{
+    font-size: 5em;
+}
+
 .header__logo{
     padding: 10px 15px;
     border-radius: 20px;
     background-color: black;
-}
-
-.header__page-name{
 }
 
 .menu{
@@ -69,12 +85,52 @@ a{
     border-bottom-color: black;
 }
 
+/*Main*/
 
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.container-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+figure img{
+    width: 250px;
+    height: 250px;
+}
+
+.mate{
+    width: 23rem;
+}
+
+.variety-buttom{
+    font-size: var(--text-xsmall);
+    text-align: center;
+    width: 14.5rem;
+    padding: 0.1rem 0.5rem;
+    margin: 0.5rem;
+    border-bottom: 1px solid black;
+    transition: all 200ms;
+}
+
+.variety-buttom:hover{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/*Inicio Pie*/
 
 #pie{
     position: relative;
     bottom: 0rem;
     font-size: 2rem;
+    background-color: #d9d9d9;
 }
 
 #pie > div{
@@ -93,21 +149,6 @@ a{
     border-radius: 10px;
     border-style: groove;
 }
-
-/* ul li{
-    text-transform: uppercase;
-    list-style-type: none;
-    display: inline-block;
-    margin: 0rem 2rem;
-}
-
-ul li>a{
-    font-family: 'Inter' sans-serif;
-    font-style: normal;
-    font-size: 3.6em;
-    font-weight: 400;
-    line-height: 4.4em;
-} */
 
 .prod-img{
     display: inline-block;
