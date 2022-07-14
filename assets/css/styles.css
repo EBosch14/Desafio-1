@@ -199,6 +199,15 @@ figcaption{
     grid-column: x3/x4;
 }
 
+.prod-img img{
+    filter: blur(0px);
+    transition: all 2s;
+}
+
+.prod-img img:hover{
+    filter: blur(5px);
+}
+
 /*Inicio Pie*/
 
 #pie{
