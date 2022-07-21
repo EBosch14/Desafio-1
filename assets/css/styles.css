@@ -337,7 +337,7 @@ figcaption{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 660px) {
     .header__logo{
         width: 6rem;
         height: 6rem;
