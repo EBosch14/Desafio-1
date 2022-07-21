@@ -50,6 +50,8 @@ em{
 
 #header{
     background-color: #d9d9d9;
+    width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -65,26 +67,38 @@ em{
 }
 
 .header__menu{
+    height: 100%;
     padding-right: 3rem;
 }
 
 .header__page-name{
-    font-size: 5em;
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
 }
 
 .header__logo{
-    padding: 10px 15px;
+    width: 8rem;
+    height: 8rem;
+    padding: 10px;
     border-radius: 20px;
     background-color: black;
 }
 
+.header__logo img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .menu{
+    height: 100%;
     display: flex;
     gap: 1.7rem;
     list-style: none;
 }
 
 .menu__link{
+    display: block;
     font-size: 3.5em;
     border-bottom: 0.2rem solid #d9d9d9;
     padding: 1rem;
@@ -134,16 +148,16 @@ em{
 }
 
 .prod-img{
+    width: 300px;
+    height: 300px;
     border-style: double;
     border-radius: 3rem;
     overflow: hidden;
 }
 
-figure img{
-    max-width: 100%;
-    max-height: 100%;
-    width: 300px;
-    height: 300px;
+.prod-img img{
+    width: 100%;
+    height: 100%;
 }
 
 figcaption{
@@ -320,5 +334,59 @@ figcaption{
     .items-inicio{
         flex-direction: column;
         gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__logo{
+        width: 6rem;
+        height: 6rem;
+        padding: 0.5rem;
+        border-radius: 15px;
+        background-color: black;
+    }
+    
+    .header__logo img{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .container-logo{
+        gap: 2rem;
+        padding-left: 1rem;
+    }
+
+    .header__page-name{
+        font-size: 3.5em;
+        letter-spacing: 0.3em;
+    }
+
+    #header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #termo, #mate, #yerba{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-mate, .title-termo, .title-yerba{
+        left: 0;
+    }
+
+    #pie{
+        font-size: 1em;
+    }
+
+    #pie > div{
+        margin: 1rem;
+    }
+
+    .section-title{
+        font-size: 4em;
+        text-align: center;
     }
 }
