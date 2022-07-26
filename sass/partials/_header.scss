@@ -1,0 +1,53 @@
+/*Customize header*/
+#header{
+    background-color: $primary-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: $spacing-letters 0;
+
+    .container-logo{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding-left: $small-spacing;
+
+        .header__logo{
+            width: 7.5rem;
+            height: 7.5rem;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .header__page-name{
+            font-size: $xlarge-font;
+            letter-spacing: $spacing-letters;
+            font-weight: 400;
+        }
+    }
+
+    .header__menu{
+        padding-right: $small-spacing;
+
+        .menu{
+            display: flex;
+            gap: $small-spacing;
+
+            &__link{
+                display: block;
+                font-size: $medium-font;
+                padding: $xsmall-spacing;
+                border-bottom: 2px solid $primary-color;
+                transition: border-bottom 1s ease;
+            }
+
+            &__link:hover{
+                border-bottom-color: black;
+            }
+        }
+    }
+}

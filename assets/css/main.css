@@ -1,0 +1,100 @@
+/*Fonts*/
+/*colors*/
+/*Spacing*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Inter", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+#pie div > img {
+  width: 32px;
+  height: 32px; }
+
+/*Customize header*/
+#header {
+  background-color: #C9C9C9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.2em 0; }
+  #header .container-logo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 4rem; }
+    #header .container-logo .header__logo {
+      width: 7.5rem;
+      height: 7.5rem;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: black;
+      overflow: hidden; }
+    #header .container-logo .header__page-name {
+      font-size: 4.5em;
+      letter-spacing: 0.2em;
+      font-weight: 400; }
+  #header .header__menu {
+    padding-right: 4rem; }
+    #header .header__menu .menu {
+      display: flex;
+      gap: 4rem; }
+      #header .header__menu .menu__link {
+        display: block;
+        font-size: 2em;
+        padding: 1.5rem;
+        border-bottom: 2px solid #C9C9C9;
+        transition: border-bottom 1s ease; }
+      #header .header__menu .menu__link:hover {
+        border-bottom-color: black; }
+
+/*Customize footer*/
+#pie {
+  font-size: 1.5em;
+  width: 100%;
+  background-color: #C9C9C9;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 7rem;
+  align-items: center;
+  justify-items: center; }
+  #pie .red-social {
+    display: inline-block; }
+    #pie .red-social div {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 5px;
+      background-color: #D9D9D9;
+      transition: background-color 500ms ease, border-radius 1s ease; }
+    #pie .red-social a:hover div {
+      background-color: #FCFFC8;
+      border-radius: 20px; }
+  #pie .back-to-top a {
+    padding: 0.2em;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #D9D9D9;
+    transition: background-color 500ms ease; }
+  #pie .back-to-top a:hover {
+    background-color: #FCFFC8; }
