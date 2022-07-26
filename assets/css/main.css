@@ -76,7 +76,8 @@ img {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 7rem;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  margin-top: auto; }
   #pie .red-social {
     display: inline-block; }
     #pie .red-social div {
