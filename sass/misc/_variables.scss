@@ -1,10 +1,12 @@
 /*Fonts*/
 $primary-font: 'Inter', sans-serif;
-$xlarge-font: 4.5em;
-$large-font: 3.5em;
-$medium-font: 2em;
-$small-font: 1em;
-$footer-font: 1.5em;
+$fonts:(
+    xlarge-font: 4.5em,
+    large-font: 3.5em,
+    medium-font: 2em,
+    small-font: 1em,
+    footer-font: 1.5em
+);
 
 /*colors*/
 $primary-color: #C9C9C9;

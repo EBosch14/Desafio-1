@@ -1,4 +1,11 @@
+/*Globals*/
 @import './misc/variables';
 @import './misc/normalize';
+@import './misc/minxin';
+
+/*Partials*/
 @import './partials/header';
 @import './partials/footer';
+
+/*Views*/
+@import './views/home';

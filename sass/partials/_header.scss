@@ -2,15 +2,12 @@
 #header{
     background-color: $primary-color;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, center, space-between);
     flex-wrap: wrap;
     padding: $spacing-letters 0;
 
     .container-logo{
-        display: flex;
-        align-items: center;
+        @include flex(null, center, null);
         gap: 3rem;
         padding-left: $small-spacing;
 
@@ -24,7 +21,7 @@
         }
 
         .header__page-name{
-            font-size: $xlarge-font;
+            font-size: map-get($fonts, xlarge-font);
             letter-spacing: $spacing-letters;
             font-weight: 400;
         }
@@ -39,10 +36,14 @@
 
             &__link{
                 display: block;
-                font-size: $medium-font;
+                font-size: map-get($fonts, medium-font);
                 padding: $xsmall-spacing;
                 border-bottom: 2px solid $primary-color;
                 transition: border-bottom 1s ease;
+                &--othercolor{
+                    @extend .menu__link;
+                    color: rgb(100, 27, 27);
+                }
             }
 
             &__link:hover{

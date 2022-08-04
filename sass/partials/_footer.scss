@@ -1,7 +1,7 @@
 /*Customize footer*/
 
 #pie{
-    font-size: $footer-font;
+    font-size: map-get($fonts, footer-font);
     width: 100%;
     background-color: $primary-color;
     display: grid;
