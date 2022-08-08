@@ -1,6 +1,46 @@
 /*customize promociones*/
 
-.promos{
-    @include flex(column, center, null);
-    gap: 7rem;
+.container{
+    .titles-promo{
+        display: inline-block;
+        position: relative;
+        letter-spacing: 0.3em;
+        left: 7rem;
+        text-align: left;
+    }
+
+    .promos{
+        margin-top: 5rem;
+        @include flex(column, center, null);
+        gap: 7rem;
+
+        .articles{
+            @include flex(row, center, null);
+            gap: 10rem;
+            .img-blur{
+                @include images(400px, 400px, solid, 5px);
+            }
+
+            .elements{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                row-gap: 10rem;
+                column-gap: 5rem;
+
+                .img-blur{
+                    @include images(200px, 200px, double, 5px);
+                }
+
+                figcaption{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        hr{
+            width: 200%;
+            height: 2px;
+        }
+    }
 }
