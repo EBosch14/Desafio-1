@@ -18,6 +18,18 @@ a {
   text-decoration: none;
   color: black; }
 
+h2 {
+  font-size: 3.5em;
+  font-weight: 400;
+  text-align: center; }
+
+b {
+  font-size: 2em; }
+
+figcaption {
+  text-align: center;
+  font-size: 1.5em; }
+
 ul {
   list-style-type: none; }
 
@@ -25,9 +37,10 @@ img {
   width: 100%;
   height: 100%; }
 
-#pie div > img {
-  width: 32px;
-  height: 32px; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1.5rem; }
 
 /*Partials*/
 /*Customize header*/
@@ -74,7 +87,6 @@ img {
 
 /*Customize footer*/
 #pie {
-  font-size: 1.5em;
   width: 100%;
   background-color: #C9C9C9;
   display: grid;
@@ -93,6 +105,8 @@ img {
       border-radius: 5px;
       background-color: #D9D9D9;
       transition: background-color 500ms ease, border-radius 1s ease; }
+    #pie .red-social span {
+      font-size: 1em; }
     #pie .red-social a:hover div {
       background-color: #FCFFC8;
       border-radius: 20px; }
@@ -106,3 +120,38 @@ img {
     background-color: #FCFFC8; }
 
 /*Views*/
+/*customize home*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem; }
+  .container-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container-items .section-title {
+      letter-spacing: 0.3em; }
+    .container-items .section-descript {
+      text-align: center; }
+    .container-items .items-inicio {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 13rem; }
+      .container-items .items-inicio .prod-img {
+        overflow: hidden;
+        width: 350px;
+        height: 400px;
+        border-style: double;
+        border-radius: 3rem; }
+    .container-items .variety-buttom {
+      font-size: 1.5em;
+      text-align: center;
+      padding: 0.2rem 1.1rem;
+      margin: 0.5rem;
+      border-bottom: 1px solid black;
+      transition: all 200ms; }
+      .container-items .variety-buttom:hover {
+        border-radius: 10px;
+        border: 1px solid black; }

@@ -1,0 +1,41 @@
+/*customize home*/
+.container{
+    @include flex(column, center, null);
+    gap: 10rem;
+
+    &-items{
+        @include flex(column, center, null);
+
+        .section-title{
+            letter-spacing: 0.3em;
+        }
+
+        .section-descript{
+            text-align: center;
+        }
+
+        .items-inicio{
+            @include flex(row, center, null);
+            gap: 13rem;
+
+            .prod-img{
+                @include images(350px, 400px, double, 3rem);
+            }
+        }
+
+        .variety-buttom{
+            font-size: map-get($fonts , small-font);
+            text-align: center;
+            padding: 0.2rem 1.1rem;
+            margin: 0.5rem;
+            border-bottom: 1px solid black;
+            transition: all 200ms;
+
+            &:hover{
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+        }
+    }
+
+}

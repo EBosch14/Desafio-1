@@ -1,7 +1,6 @@
 /*Customize footer*/
 
 #pie{
-    font-size: map-get($fonts, footer-font);
     width: 100%;
     background-color: $primary-color;
     display: grid;
@@ -23,6 +22,10 @@
             background-color: $secundary-color;
             transition: 
                 background-color 500ms ease, border-radius 1s ease;
+        }
+
+        span{
+            font-size: map-get($fonts, footer-font);
         }
 
         a:hover{

@@ -19,6 +19,21 @@ a{
     color: black;
 }
 
+h2{
+    font-size: map-get($fonts, large-font);
+    font-weight: 400;
+    text-align: center;
+}
+
+b{
+    font-size: map-get($fonts, medium-font);
+}
+
+figcaption{
+    text-align: center;
+    font-size: map-get($fonts, small-font);
+}
+
 ul{
     list-style-type: none;
 }
@@ -28,7 +43,8 @@ img{
     height: 100%;
 }
 
-#pie div > img{
-    width: 32px;
-    height: 32px;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: $xsmall-spacing;
 }

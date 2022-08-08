@@ -4,3 +4,11 @@
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin images($width, $height, $style, $radius) {
+    overflow: hidden;
+    width: $width;
+    height: $height;
+    border-style: $style;
+    border-radius: $radius;
+}
