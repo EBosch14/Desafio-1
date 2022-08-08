@@ -1,0 +1,6 @@
+/*customize promociones*/
+
+.promos{
+    @include flex(column, center, null);
+    gap: 7rem;
+}
