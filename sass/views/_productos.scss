@@ -1,0 +1,68 @@
+/*Customize productos*/
+.container.prod{
+    @include flex(column, center, null);
+    margin-top: 4rem;
+    gap: 15rem;
+
+    .gird-prod{
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+        grid-template-rows: [y0] auto [y1] auto [y2];
+        justify-items: center;
+        row-gap: .5rem;
+        column-gap: 2rem;
+
+        .titles-prod{
+            position: relative;
+            letter-spacing: 0.3em;
+            left: 9rem;
+            grid-column: x0 / x4;
+            grid-row: y0 / y1;
+            justify-self: start;
+        }
+
+        .article-1{
+            grid-row: y1/y2;
+            grid-column: x0/x1;
+        }
+        
+        .article-2{
+            grid-row: y1/y2;
+            grid-column: x1/x2;
+        }
+        
+        .article-3{
+            grid-row: y1/y2;
+            grid-column: x2/x3;
+        }
+        
+        .article-4{
+            grid-row: y1/y2;
+            grid-column: x3/x4;
+        }
+    }
+
+    #mate{
+        .prod-img{
+            @include images(300px, 300px, solid, 2rem);
+            border-width: 0.2rem;
+        }
+    }
+
+    #termo{
+        .prod-img{
+            @include images(300px, 400px, solid, 2rem);
+            border-width: 0.2rem;
+        }
+    }
+
+    #yerba{
+        .flex-yerba{
+            @include flex(column, center, null);
+        }
+        .prod-img{
+            @include images(300px, 300px, solid, 2rem);
+            border-width: 0.2rem;
+        }
+    }
+}
