@@ -1,0 +1,28 @@
+/*Customize envios*/
+
+.container{
+    .envios{
+        @include flex(column, center, null);
+
+        .formulario{
+            width: 60%;
+
+            .marco{
+                padding: 2rem;
+
+                .title-form{
+                    font-size: map-get($fonts, medium-font);
+                }
+
+                label{
+                    font-size: map-get($fonts, small-font);
+                }
+            }
+        }
+
+        p{
+            font-size: map-get($fonts, medium-font);
+            margin: 4rem 0 1.5rem 0;
+        }
+    }
+}

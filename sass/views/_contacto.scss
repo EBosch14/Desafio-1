@@ -1,0 +1,14 @@
+/*Customize Contacto*/
+
+.container.contact{
+    @include flex(column, center, null);
+    gap: 5rem;
+
+    .contacto{
+        .coment{
+            
+        }
+    }
+}
+
+

@@ -268,3 +268,27 @@ img {
   .container .promos hr {
     width: 200%;
     height: 2px; }
+
+/*Customize envios*/
+.container .envios {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container .envios .formulario {
+    width: 60%; }
+    .container .envios .formulario .marco {
+      padding: 2rem; }
+      .container .envios .formulario .marco .title-form {
+        font-size: 2em; }
+      .container .envios .formulario .marco label {
+        font-size: 1.5em; }
+  .container .envios p {
+    font-size: 2em;
+    margin: 4rem 0 1.5rem 0; }
+
+/*Customize Contacto*/
+.container.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem; }
