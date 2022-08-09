@@ -66,3 +66,68 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1300px) {
+    .container.prod .gird-prod{
+        width: 100%;
+        display: grid;
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+        grid-template-rows: [y0] auto [y1] auto [y2] auto [y3];
+        justify-items: center;
+        row-gap: 2rem;
+        column-gap: 0;
+
+        .titles-prod{
+            position: relative;
+            letter-spacing: 0.3em;
+            left: 0;
+            grid-column: x0 / x2;
+            grid-row: y0 / y1;
+            justify-self: center;
+        }
+
+        .article-1{
+            grid-row: y1/y2;
+            grid-column: x0/x1;
+        }
+        
+        .article-2{
+            grid-row: y1/y2;
+            grid-column: x1/x2;
+        }
+        
+        .article-3{
+            grid-row: y2/y3;
+            grid-column: x0/x1;
+        }
+        
+        .article-4{
+            grid-row: y2/y3;
+            grid-column: x1/x2;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container.prod{ 
+
+        article figcaption{
+            font-size: map-get($fonts, footer-font);
+        }
+
+        .titles-prod{
+            font-size: map-get($fonts, medium-font);
+        }
+
+        #mate .prod-img{
+            @include images(200px, 200px, solid, 1rem)
+        }
+        #termo .prod-img{
+            @include images(200px, 300px, solid, 1rem)
+        }
+        #yerba .prod-img{
+            @include images(200px, 200px, solid, 1rem)
+        }
+    }
+}

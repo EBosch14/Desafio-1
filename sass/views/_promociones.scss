@@ -44,3 +44,32 @@
         }
     }
 }
+
+@media screen and (max-width: 970px) {
+
+    .container{
+
+        .titles-promo{
+            font-size: map-get($fonts, medium-font);
+        }
+
+        .promos{ 
+            .articles{
+                @include flex(column, center, null);
+                width: 90%;
+                gap: 3rem;
+
+                .img-blur{
+                    @include images(300px, 300px, solid, 5px);
+                }
+
+                .elements{
+                    width: 100%;
+                    justify-items: center;
+                    column-gap: 0;
+                    row-gap: 3rem;
+                }
+            }        
+        }
+    }
+}

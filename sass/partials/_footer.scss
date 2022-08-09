@@ -51,3 +51,25 @@
         }
     }
 }
+
+@media screen and (max-width:1110px) {
+    #pie{
+        .red-social{
+            .ubic{
+                .respon{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #pie{
+        .red-social{
+            span{
+                display: none;
+            }
+        }
+    }
+}

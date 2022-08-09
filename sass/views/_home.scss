@@ -16,10 +16,15 @@
 
         .items-inicio{
             @include flex(row, center, null);
-            gap: 13rem;
+            // gap: 13rem;
 
             .prod-img{
-                @include images(350px, 400px, double, 3rem);
+                
+                @include images(none, none, double, 3rem);
+                max-width: 350px;
+                max-height: 400px;
+                flex: 1 1 50%;
+                margin: 2rem;
             }
         }
 
@@ -38,4 +43,22 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width: 1240px) {
+    .section-descript{
+        font-size: map-get($fonts, small-font);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-title{
+        font-size: map-get($fonts, medium-font);
+    }
+
+    .container.home .container-items .variety-buttom{
+        font-size: map-get($fonts, footer-font);
+    }
+    
 }
