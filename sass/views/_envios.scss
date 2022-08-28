@@ -5,7 +5,7 @@
         @include flex(column, center, null);
 
         .formulario{
-            width: 60%;
+            width: 620px;
 
             .marco{
                 padding: 2rem;
@@ -14,8 +14,38 @@
                     font-size: map-get($fonts, medium-font);
                 }
 
-                label{
-                    font-size: map-get($fonts, small-font);
+                .container-form{
+                    @include flex(column, flex-start, null);
+                    gap: 10px;
+                
+                    label{
+                        font-size: map-get($fonts, small-font);
+                    }
+
+                    .container-form__responsive{
+                        @include flex(row, null, null);
+                        gap: 2px;
+                    }
+
+                    .metodos-pago{
+                        @include flex(row, null, null);
+                        #transBanc{
+                            margin: 0 0 0 .5rem;
+                        }
+
+                        #tarjCred{
+                            margin: 0 0 0 2.5rem;
+                        }
+                    }
+
+                    .buttom{
+                        padding: .2rem .5rem;
+                        margin: 0 .5rem;
+                    }
+
+                    .buttom.uno{
+                        margin-left: 0;
+                    }
                 }
             }
         }
@@ -24,5 +54,59 @@
             font-size: map-get($fonts, medium-font);
             margin: 4rem 0 1.5rem 0;
         }
+
+        iframe{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .container .envios .formulario{
+        width: 70%;
+        min-width: 400px;
+        .marco .container-form .container-form__responsive{
+            @include flex(column,null,null)
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    iframe{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container .envios .formulario{
+        min-width: 320px;
+
+        .marco{
+            padding: 1rem;
+
+            .container-form{
+                @include flex(column, center, null);
+                gap: 10px;
+    
+                .container-form__responsive{
+                    @include flex(column, center, null)
+                }
+    
+                .metodos-pago{
+                    @include flex(column, flex-start, null);
+                    #tarjCred, #transBanc{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .title-form{
+            width: auto;
+            margin: 0 auto;
+        }
+
+        
     }
 }

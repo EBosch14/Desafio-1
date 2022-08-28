@@ -25,6 +25,7 @@
         }
 
         span{
+            margin-left: 0.5rem;
             font-size: map-get($fonts, footer-font);
         }
 
@@ -39,6 +40,7 @@
     .back-to-top{
 
         a{
+            font-size: map-get($fonts, footer-font);
             padding: $spacing-letters;
             border: 1px solid black;
             border-radius: 7px;
@@ -52,13 +54,16 @@
     }
 }
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:950px) {
     #pie{
         .red-social{
-            .ubic{
-                .respon{
-                    display: none;
-                }
+            span{
+                font-size: 1.2em;
+            }
+        }
+        .back-to-top{
+            a{
+                font-size: 1.2em;
             }
         }
     }

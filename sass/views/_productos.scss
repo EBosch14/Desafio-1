@@ -131,3 +131,32 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .container.prod{ 
+
+        .responsive-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        article figcaption{
+            font-size: 1.2em;
+        }
+
+        .titles-prod{
+            font-size: map-get($fonts, medium-font);
+        }
+
+        #mate .prod-img{
+            @include images(150px, 150px, solid, 1rem)
+        }
+        #termo .prod-img{
+            @include images(150px, 250px, solid, 1rem)
+        }
+        #yerba .prod-img{
+            @include images(150px, 150px, solid, 1rem)
+        }
+    }
+}

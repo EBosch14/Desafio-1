@@ -39,7 +39,7 @@
         }
 
         hr{
-            width: 200%;
+            width: 100%;
             height: 2px;
         }
     }
@@ -70,6 +70,27 @@
                     row-gap: 3rem;
                 }
             }        
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+
+        .promos .articles{
+            .img-blur{
+                @include images(250px, 250px, solid, 5px)
+            }
+
+            .elements {
+                .responsive-flex{
+                    @include flex(column, center, null);
+
+                    .img-blur{
+                        @include images(150px, 150px, double, 2px);
+                    }
+                }                
+            }
         }
     }
 }

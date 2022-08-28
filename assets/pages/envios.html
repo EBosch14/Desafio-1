@@ -34,33 +34,59 @@
             <form action="" class="formulario">
                 <fieldset class="marco">
                     <legend class="title-form">Formulario de Envio</legend>
-                    <label>Seleccione que desea comprar: </label>
-                    <select name="Prodcutos" id="">
-                        <option value="1">---------------------------</option>
-                        <option value="2">Termo Stanley</option>
-                        <option value="3">Termo Coleman</option>
-                        <option value="4">Mate Imperial</option>
-                        <option value="5">Mate Electrico</option>
-                        <option value="6">Yerba Canarias</option>
-                        <option value="7">Yerba Cruz de Malta</option>
-                        <option value="8">Kit matero fernet</option>
-                        <option value="9">Kit matero aceroinoxidable</option>
-                    </select>
-                    <br><br>
-                    <label for="">Seleccione la forma de pago: </label>
-                    <input type="radio" name="payMethod" value="Transferencia Bancaria">
-                    <label for="payMethod">Transferencia Bancaria</label>
-                    <input type="radio" name="payMethod" value="Tarjeta de Credito">
-                    <label for="payMethod">Tarjeta de Credito</label>
-                    <br><br>
-                    <label for="">Nombre: </label> <input type="text" placeholder="Nombre..">
-                    &emsp;
-                    <label for="">Apellido: </label> <input type="text" placeholder="Apellido.. "><br><br>
-                    <label for="">Telefono: </label> <input type="tel" placeholder="1122334455"><br><br>
-                    <label for="">Email: </label> <input type="email" placeholder="example@email.com" style="width: 160px;"><br><br>
-                    <label for="">Direccion: </label> <input type="text" placeholder="Av. Italia 1041, Resistencia - Chaco, Argentina" style="width: 300px;"><br><br>
-                    <input type="submit" value="Enviar peticion de compra">
-                    <input type="reset" value="Borrar datos">
+                    <div class="container-form">
+                        <div class="container-form__responsive">
+                            <label>Seleccione que desea comprar: </label>
+                            <select name="Prodcutos" id="">
+                                <option value="1">---------------------------</option>
+                                <option value="2">Termo Stanley</option>
+                                <option value="3">Termo Coleman</option>
+                                <option value="4">Mate Imperial</option>
+                                <option value="5">Mate Electrico</option>
+                                <option value="6">Yerba Canarias</option>
+                                <option value="7">Yerba Cruz de Malta</option>
+                                <option value="8">Kit matero fernet</option>
+                                <option value="9">Kit matero aceroinoxidable</option>
+                        </select>
+                        </div><br>
+                        <div class="container-form__responsive">
+                            <label for="">Seleccione la forma de pago: </label>
+                            <div class="metodos-pago">
+                                <div>
+                                    <input type="radio" id="transBanc" name="payMethod" value="Transferencia Bancaria">
+                                    <label for="transBanc">Transferencia Bancaria</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="tarjCred" name="payMethod" value="Tarjeta de Credito">
+                                    <label for="tarjCred">Tarjeta de Credito</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">Nombre: </label>
+                            <input type="text" placeholder="Nombre..">
+                        </div>
+                        <div>
+                            <label for="">Apellido: </label>
+                            <input type="text" placeholder="Apellido.. ">
+                        </div>
+                        <div>
+                            <label for="">Telefono: </label>
+                            <input type="tel" placeholder="1122334455">
+                        </div>
+                        <div>
+                            <label for="">Email: </label>
+                            <input type="email" placeholder="example@email.com" style="width: 160px;">
+                        </div>
+                        <div class="container-form__responsive">
+                            <label for="">Direccion: </label>
+                            <input type="text" placeholder="Av. Italia 1041, Resistencia - Chaco, Argentina" style="width: 210px;">
+                        </div>
+                        <div>
+                            <input class="buttom uno" type="submit" value="Enviar peticion de compra">
+                            <input class="buttom dos" type="reset" value="Borrar datos">
+                        </div>
+                    </div>
                 </fieldset>
             </form>
             <p>Mapa de ayuda visual</p>
@@ -89,7 +115,7 @@
         <div class="red-social">
             <a href="#">
                 <div class="fa fa-map-pin"></div>
-                <span>Av. Italia N° 1041, Resistencia - Chaco</span>
+                <span>Ubicación</span>
             </a>
         </div>
         <div class="back-to-top">
